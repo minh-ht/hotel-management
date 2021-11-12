@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+   <children>
+      <Pane prefHeight="50.0" prefWidth="640.0" style="-fx-background-color: #0C88DA;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="30.0" layoutY="7.0" prefHeight="32.0" prefWidth="59.0" text="Hotel" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutY="50.0" prefHeight="370.0" prefWidth="170.0" style="-fx-background-color: #F9BB92;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fitHeight="190.0" fitWidth="170.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../resources/assests/img/pane_img.jpg" />
+               </image></ImageView>
+            <VBox layoutY="190.0" prefHeight="180.0" prefWidth="170.0">
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#changeToFile" prefHeight="45.0" prefWidth="170.0" text="FILE" />
+                  <Button mnemonicParsing="false" onMouseClicked="#changeToRoom" prefHeight="45.0" prefWidth="170.0" text="ROOM" />
+                  <Button mnemonicParsing="false" onMouseClicked="#changeToCustomer" prefHeight="45.0" prefWidth="170.0" text="CUSTOMER" />
+                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="170.0" text="ABOUT" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="mainPane" layoutX="170.0" layoutY="50.0" prefHeight="370.0" prefWidth="470.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+   </children>
+</AnchorPane>

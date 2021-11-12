@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="370.0" prefWidth="470.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.CustomerSceneController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutY="145.0" prefHeight="260.0" prefWidth="450.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <content>
+            <TableView fx:id="table" prefHeight="258.0" prefWidth="437.0" editable="true">
+              <columns>
+                <TableColumn fx:id="firstName" prefWidth="69.0" text="First Name" />
+                <TableColumn fx:id="lastName" prefWidth="89.0" text="Last Name" />
+                  <TableColumn fx:id="address" prefWidth="97.0" text="Address" />
+                  <TableColumn fx:id="email" prefWidth="87.0" text="Email" />
+                  <TableColumn fx:id="phone" prefWidth="94.0" text="Phone" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <ButtonBar layoutX="183.0" layoutY="60.0" prefHeight="40.0" prefWidth="277.0">
+         <buttons>
+            <Button fx:id="addBtn" onMouseClicked="#handleAddButton" mnemonicParsing="false" text="Add" />
+            <Button fx:id="deleteBtn" onMouseClicked="#handleDeleteButton" mnemonicParsing="false" text="Delete" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
